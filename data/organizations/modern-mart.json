@@ -1,0 +1,96 @@
+{
+  "id": "MODR03",
+  "name": "Modern Mart",
+  "slug": "modern-mart",
+  "phone": "+1 555 030 4040",
+  "email": "billing@modernmart.com",
+  "status": "active",
+  "themeColor": "#10B981",
+  "logoUrl": "",
+  "createdAt": "2026-09-04T22:33:36.417Z",
+  "updatedAt": "2026-09-04T22:33:36.417Z",
+  "admin": {
+    "id": "9e6cc7a1-5003-40cf-85a5-cd094dee3a06",
+    "username": "modamode",
+    "passwordHash": "$2a$10$OIFlBoDgTJIPHSA/Du95beYJDDcmtAY3b6TFHQeCx7RG3f/A1eN7i",
+    "forcePasswordChange": false,
+    "createdAt": "2026-09-04T22:33:36.417Z",
+    "updatedAt": "2026-09-04T22:33:36.417Z"
+  },
+  "landing": {
+    "logoUrl": "",
+    "bannerUrl": "",
+    "heading": "Welcome to Modern Mart",
+    "subHeading": "Fast, secure payments made simple",
+    "description": "Modern Mart accepts payments through multiple verified accounts. Choose a payment method below and complete your transaction with confidence.",
+    "primaryColor": "#10B981",
+    "secondaryColor": "#10B981",
+    "buttonText": "View Payment Details",
+    "footerText": "© 2026 Modern Mart. All rights reserved.",
+    "supportPhone": "",
+    "supportEmail": "",
+    "address": "",
+    "website": "",
+    "facebook": "",
+    "instagram": "",
+    "linkedin": "",
+    "whatsapp": "",
+    "seoTitle": "Modern Mart — Payments",
+    "seoDescription": "Official payment page for Modern Mart",
+    "faviconUrl": ""
+  },
+  "theme": {
+    "primaryColor": "#10B981",
+    "secondaryColor": "#10B981",
+    "background": "#FFFFFF",
+    "cardRadius": 16,
+    "font": "Inter",
+    "logoUrl": "",
+    "mode": "light"
+  },
+  "accounts": [
+    {
+      "id": "a1126024-4171-450a-9f0f-b645f5e8e8cd",
+      "accountName": "Store Collections",
+      "accountType": "current",
+      "bankName": "Metro Commercial Bank",
+      "branch": "Main Branch",
+      "accountHolderName": "Modern Mart Pvt Ltd",
+      "accountNumber": "1122334455667",
+      "ifsc": "MCB0003344",
+      "upiId": "modernmart@upi",
+      "qrImageUrl": "",
+      "description": "Verified payment account",
+      "priority": 2,
+      "status": "active",
+      "tags": [
+        "verified"
+      ],
+      "visibleToClients": true,
+      "createdAt": "2026-09-04T22:33:36.417Z",
+      "updatedAt": "2026-09-04T22:33:36.417Z"
+    },
+    {
+      "id": "0b240537-ce2c-427e-9db4-5aa9eab3c347",
+      "accountName": "Online Orders",
+      "accountType": "savings",
+      "bankName": "Metro Commercial Bank",
+      "branch": "Main Branch",
+      "accountHolderName": "Modern Mart Pvt Ltd",
+      "accountNumber": "7788990011223",
+      "ifsc": "MCB0003344",
+      "upiId": "modernmart.online@upi",
+      "qrImageUrl": "",
+      "description": "Verified payment account",
+      "priority": 1,
+      "status": "active",
+      "tags": [
+        "verified"
+      ],
+      "visibleToClients": true,
+      "createdAt": "2026-09-04T22:33:36.417Z",
+      "updatedAt": "2026-09-04T22:33:36.417Z"
+    }
+  ],
+  "analytics": []
+}

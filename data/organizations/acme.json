@@ -1,0 +1,153 @@
+{
+  "id": "ACME01",
+  "name": "Acme Traders",
+  "slug": "acme",
+  "phone": "+1 555 010 2020",
+  "email": "contact@acmetraders.com",
+  "status": "active",
+  "themeColor": "#6D28D9",
+  "logoUrl": "",
+  "createdAt": "2026-09-04T21:31:35.931Z",
+  "updatedAt": "2026-09-04T22:43:53.509Z",
+  "admin": {
+    "id": "c28c3f65-ad66-4668-a72b-818fc828875f",
+    "username": "acmaacme",
+    "passwordHash": "$2a$10$Vw2atFUEJpWPzyALiJJCIeeJWfNAZ/n83JtArySeEB78HaQhgH0hG",
+    "forcePasswordChange": false,
+    "createdAt": "2026-09-04T21:31:35.931Z",
+    "updatedAt": "2026-09-04T21:31:35.931Z"
+  },
+  "landing": {
+    "logoUrl": "",
+    "bannerUrl": "",
+    "heading": "Welcome to Acme Traders",
+    "subHeading": "Fast, secure payments made simple",
+    "description": "Acme Traders accepts payments through multiple verified accounts. Choose a payment method below and complete your transaction with confidence.",
+    "primaryColor": "#6D28D9",
+    "secondaryColor": "#6D28D9",
+    "buttonText": "View Payment Details",
+    "footerText": "© 2026 Acme Traders. All rights reserved.",
+    "supportPhone": "",
+    "supportEmail": "",
+    "address": "",
+    "website": "",
+    "facebook": "",
+    "instagram": "",
+    "linkedin": "",
+    "whatsapp": "",
+    "seoTitle": "Acme Traders — Payments",
+    "seoDescription": "Official payment page for Acme Traders",
+    "faviconUrl": ""
+  },
+  "theme": {
+    "primaryColor": "#6D28D9",
+    "secondaryColor": "#6D28D9",
+    "background": "#FFFFFF",
+    "cardRadius": 16,
+    "font": "Inter",
+    "logoUrl": "",
+    "mode": "light"
+  },
+  "accounts": [
+    {
+      "id": "fb559c57-7ffd-442d-9197-f3263d5623e5",
+      "accountName": "Primary Business Account",
+      "accountType": "current",
+      "bankName": "First National Bank",
+      "branch": "Main Branch",
+      "accountHolderName": "Acme Traders LLC",
+      "accountNumber": "1234567890123",
+      "ifsc": "FNB0001122",
+      "upiId": "acmetraders@upi",
+      "qrImageUrl": "",
+      "description": "Verified payment account",
+      "priority": 3,
+      "status": "active",
+      "tags": [
+        "verified"
+      ],
+      "visibleToClients": true,
+      "createdAt": "2026-09-04T21:31:35.931Z",
+      "updatedAt": "2026-09-04T21:31:35.931Z"
+    },
+    {
+      "id": "6edd8143-aafe-40f2-a011-b53e2a350f1c",
+      "accountName": "Secondary Account",
+      "accountType": "savings",
+      "bankName": "Union Bank",
+      "branch": "Main Branch",
+      "accountHolderName": "Acme Traders LLC",
+      "accountNumber": "9988776655443",
+      "ifsc": "UNB0004455",
+      "upiId": "acme2@upi",
+      "qrImageUrl": "",
+      "description": "Verified payment account",
+      "priority": 1,
+      "status": "active",
+      "tags": [
+        "verified"
+      ],
+      "visibleToClients": true,
+      "createdAt": "2026-09-04T21:31:35.931Z",
+      "updatedAt": "2026-09-04T21:31:35.931Z"
+    }
+  ],
+  "analytics": [
+    {
+      "type": "public_visit",
+      "accountId": "6edd8143-aafe-40f2-a011-b53e2a350f1c",
+      "visitorId": "1f7313c4-63fe-492a-923a-f4af8f4058df",
+      "id": "6b25994d-afb9-45fc-9f1b-9b83fc8563cd",
+      "createdAt": "2026-09-04T22:43:41.488Z"
+    },
+    {
+      "type": "account_shown",
+      "accountId": "6edd8143-aafe-40f2-a011-b53e2a350f1c",
+      "visitorId": "1f7313c4-63fe-492a-923a-f4af8f4058df",
+      "id": "bb6e1174-ee50-4963-b4b8-f2b1ea51c4d4",
+      "createdAt": "2026-09-04T22:43:41.496Z"
+    },
+    {
+      "type": "public_visit",
+      "accountId": "6edd8143-aafe-40f2-a011-b53e2a350f1c",
+      "visitorId": "1f7313c4-63fe-492a-923a-f4af8f4058df",
+      "id": "c1c57df9-f89b-4969-84d4-97aa8d0f4c46",
+      "createdAt": "2026-09-04T22:43:41.582Z"
+    },
+    {
+      "type": "account_shown",
+      "accountId": "6edd8143-aafe-40f2-a011-b53e2a350f1c",
+      "visitorId": "1f7313c4-63fe-492a-923a-f4af8f4058df",
+      "id": "a8b8240d-9611-40c5-babf-845147573b25",
+      "createdAt": "2026-09-04T22:43:41.588Z"
+    },
+    {
+      "type": "public_visit",
+      "accountId": "fb559c57-7ffd-442d-9197-f3263d5623e5",
+      "visitorId": "1f7313c4-63fe-492a-923a-f4af8f4058df",
+      "id": "76d3a065-42ab-4e9e-a437-e48c16d214e9",
+      "createdAt": "2026-09-04T22:43:53.429Z"
+    },
+    {
+      "type": "account_shown",
+      "accountId": "fb559c57-7ffd-442d-9197-f3263d5623e5",
+      "visitorId": "1f7313c4-63fe-492a-923a-f4af8f4058df",
+      "id": "7c19f194-6472-4611-8185-f924eadc2400",
+      "createdAt": "2026-09-04T22:43:53.435Z"
+    },
+    {
+      "type": "public_visit",
+      "accountId": "6edd8143-aafe-40f2-a011-b53e2a350f1c",
+      "visitorId": "1f7313c4-63fe-492a-923a-f4af8f4058df",
+      "id": "dbfa7b96-b4df-491f-8637-c1c313ede201",
+      "createdAt": "2026-09-04T22:43:53.501Z"
+    },
+    {
+      "type": "account_shown",
+      "accountId": "6edd8143-aafe-40f2-a011-b53e2a350f1c",
+      "visitorId": "1f7313c4-63fe-492a-923a-f4af8f4058df",
+      "id": "7a821e12-1203-4313-bbfd-ef79aaac1aaf",
+      "createdAt": "2026-09-04T22:43:53.506Z"
+    }
+  ]
+}

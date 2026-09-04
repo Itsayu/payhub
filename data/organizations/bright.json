@@ -1,0 +1,75 @@
+{
+  "id": "BRIT02",
+  "name": "Bright School",
+  "slug": "bright",
+  "phone": "+1 555 020 3030",
+  "email": "accounts@brightschool.edu",
+  "status": "active",
+  "themeColor": "#0EA5E9",
+  "logoUrl": "",
+  "createdAt": "2026-09-04T21:31:35.931Z",
+  "updatedAt": "2026-09-04T21:31:35.931Z",
+  "admin": {
+    "id": "abf8725b-ce2a-4f96-bb5f-6ece90403184",
+    "username": "briabrig",
+    "passwordHash": "$2a$10$Vw2atFUEJpWPzyALiJJCIeeJWfNAZ/n83JtArySeEB78HaQhgH0hG",
+    "forcePasswordChange": false,
+    "createdAt": "2026-09-04T21:31:35.931Z",
+    "updatedAt": "2026-09-04T21:31:35.931Z"
+  },
+  "landing": {
+    "logoUrl": "",
+    "bannerUrl": "",
+    "heading": "Welcome to Bright School",
+    "subHeading": "Fast, secure payments made simple",
+    "description": "Bright School accepts payments through multiple verified accounts. Choose a payment method below and complete your transaction with confidence.",
+    "primaryColor": "#0EA5E9",
+    "secondaryColor": "#0EA5E9",
+    "buttonText": "View Payment Details",
+    "footerText": "© 2026 Bright School. All rights reserved.",
+    "supportPhone": "",
+    "supportEmail": "",
+    "address": "",
+    "website": "",
+    "facebook": "",
+    "instagram": "",
+    "linkedin": "",
+    "whatsapp": "",
+    "seoTitle": "Bright School — Payments",
+    "seoDescription": "Official payment page for Bright School",
+    "faviconUrl": ""
+  },
+  "theme": {
+    "primaryColor": "#0EA5E9",
+    "secondaryColor": "#0EA5E9",
+    "background": "#FFFFFF",
+    "cardRadius": 16,
+    "font": "Inter",
+    "logoUrl": "",
+    "mode": "light"
+  },
+  "accounts": [
+    {
+      "id": "71ef1518-a346-4564-be01-1641e910945f",
+      "accountName": "School Fees Account",
+      "accountType": "current",
+      "bankName": "City Trust Bank",
+      "branch": "Main Branch",
+      "accountHolderName": "Bright School Trust",
+      "accountNumber": "5566778899001",
+      "ifsc": "CTB0002233",
+      "upiId": "brightschool@upi",
+      "qrImageUrl": "",
+      "description": "Verified payment account",
+      "priority": 2,
+      "status": "active",
+      "tags": [
+        "verified"
+      ],
+      "visibleToClients": true,
+      "createdAt": "2026-09-04T21:31:35.931Z",
+      "updatedAt": "2026-09-04T21:31:35.931Z"
+    }
+  ],
+  "analytics": []
+}

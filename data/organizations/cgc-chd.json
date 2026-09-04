@@ -1,0 +1,388 @@
+{
+  "id": "FTT584",
+  "name": "CGC Jhanjeri",
+  "slug": "cgc-chd",
+  "phone": "+91 1235467980",
+  "email": "",
+  "status": "active",
+  "themeColor": "#6D28D9",
+  "logoUrl": "",
+  "createdAt": "2026-09-04T22:45:54.548Z",
+  "updatedAt": "2026-09-04T23:07:59.448Z",
+  "admin": {
+    "id": "5b752fbc-6a71-43c3-af7d-5911046e10e6",
+    "username": "fttacgcc",
+    "passwordHash": "$2a$10$c2qGa/B.Hc5TgwBNmwLNj.4iGXUd6gDyS0vA1mo2.tTyyvQUdXO3C",
+    "forcePasswordChange": false,
+    "createdAt": "2026-09-04T22:45:54.548Z",
+    "updatedAt": "2026-09-04T22:51:21.598Z"
+  },
+  "landing": {
+    "logoUrl": "/uploads/cgc-chd/1788562815772-6abfiv.png",
+    "bannerUrl": "/uploads/cgc-chd/1788562826740-7fal8h.png",
+    "heading": "Welcome to CGC Jhanjeri",
+    "subHeading": "Fast, secure payments made simple",
+    "description": "CGC Jhanjeri accepts payments through multiple verified accounts. Choose a payment method below and complete your transaction with confidence.",
+    "primaryColor": "#0d0d0d",
+    "secondaryColor": "#330085",
+    "buttonText": "View Payment Details",
+    "footerText": "© 2026 CGC Jhanjeri. All rights reserved.",
+    "supportPhone": "",
+    "supportEmail": "",
+    "address": "",
+    "website": "",
+    "facebook": "",
+    "instagram": "",
+    "linkedin": "",
+    "whatsapp": "",
+    "seoTitle": "CGC Jhanjeri — Payments",
+    "seoDescription": "Official payment page for CGC Jhanjeri",
+    "faviconUrl": "/uploads/cgc-chd/1788562838421-x64av9.ico"
+  },
+  "theme": {
+    "primaryColor": "#363636",
+    "secondaryColor": "#971c2e",
+    "background": "#FFFFFF",
+    "cardRadius": 16,
+    "font": "Inter",
+    "logoUrl": "",
+    "mode": "light"
+  },
+  "accounts": [
+    {
+      "accountName": "sadsda",
+      "accountType": "savings",
+      "bankName": "sadsda",
+      "branch": "sfdeferf",
+      "accountHolderName": "asdasdad",
+      "accountNumber": "1234567890",
+      "ifsc": "scsdc12345",
+      "upiId": "ujytrewq@dcdec",
+      "qrImageUrl": "/uploads/cgc-chd/1788562363926-al5ka5.avif",
+      "description": "",
+      "priority": 0,
+      "status": "active",
+      "tags": [],
+      "visibleToClients": true,
+      "id": "d282bba2-6f29-4a58-82b8-6a019d9d406b",
+      "createdAt": "2026-09-04T22:52:46.726Z",
+      "updatedAt": "2026-09-04T22:52:46.726Z"
+    },
+    {
+      "accountName": "crecrecc",
+      "accountType": "current",
+      "bankName": "crecrecc",
+      "branch": "xcrcdscfe",
+      "accountHolderName": "rcefcefvc",
+      "accountNumber": "0987654321",
+      "ifsc": "qwer12345",
+      "upiId": "jhgfds@asdcdw",
+      "qrImageUrl": "/uploads/cgc-chd/1788562396489-frhvh3.jpeg",
+      "description": "assdc asxws cedce ",
+      "priority": 0,
+      "status": "active",
+      "tags": [],
+      "visibleToClients": true,
+      "id": "a4f6d9b5-7d45-4227-9004-da8617ea7051",
+      "createdAt": "2026-09-04T22:53:23.171Z",
+      "updatedAt": "2026-09-04T22:53:23.171Z"
+    }
+  ],
+  "analytics": [
+    {
+      "type": "public_visit",
+      "accountId": "a4f6d9b5-7d45-4227-9004-da8617ea7051",
+      "visitorId": "1f7313c4-63fe-492a-923a-f4af8f4058df",
+      "id": "bbf75974-a315-4c3e-a2bc-bb87d5d95fbb",
+      "createdAt": "2026-09-04T22:54:11.286Z"
+    },
+    {
+      "type": "account_shown",
+      "accountId": "a4f6d9b5-7d45-4227-9004-da8617ea7051",
+      "visitorId": "1f7313c4-63fe-492a-923a-f4af8f4058df",
+      "id": "bdf797fe-dbbe-4646-89e8-642f8e244b68",
+      "createdAt": "2026-09-04T22:54:11.290Z"
+    },
+    {
+      "type": "qr_view",
+      "accountId": "a4f6d9b5-7d45-4227-9004-da8617ea7051",
+      "visitorId": "1f7313c4-63fe-492a-923a-f4af8f4058df",
+      "id": "cf16556c-3c7e-4145-a163-12427b513e60",
+      "createdAt": "2026-09-04T22:54:11.707Z"
+    },
+    {
+      "type": "public_visit",
+      "accountId": "a4f6d9b5-7d45-4227-9004-da8617ea7051",
+      "visitorId": "1f7313c4-63fe-492a-923a-f4af8f4058df",
+      "id": "722f1ea3-db01-4977-8863-07f2a148384b",
+      "createdAt": "2026-09-04T22:54:18.812Z"
+    },
+    {
+      "type": "account_shown",
+      "accountId": "a4f6d9b5-7d45-4227-9004-da8617ea7051",
+      "visitorId": "1f7313c4-63fe-492a-923a-f4af8f4058df",
+      "id": "f1d8e558-ca34-4dc2-a87c-2688f359c711",
+      "createdAt": "2026-09-04T22:54:18.818Z"
+    },
+    {
+      "type": "qr_view",
+      "accountId": "a4f6d9b5-7d45-4227-9004-da8617ea7051",
+      "visitorId": "1f7313c4-63fe-492a-923a-f4af8f4058df",
+      "id": "5ec616a3-6c9c-4f78-95af-30444142797b",
+      "createdAt": "2026-09-04T22:54:19.244Z"
+    },
+    {
+      "type": "public_visit",
+      "accountId": "d282bba2-6f29-4a58-82b8-6a019d9d406b",
+      "visitorId": "1f7313c4-63fe-492a-923a-f4af8f4058df",
+      "id": "59321e05-3f74-4e5b-9e18-0e19c184ccde",
+      "createdAt": "2026-09-04T22:54:22.552Z"
+    },
+    {
+      "type": "account_shown",
+      "accountId": "d282bba2-6f29-4a58-82b8-6a019d9d406b",
+      "visitorId": "1f7313c4-63fe-492a-923a-f4af8f4058df",
+      "id": "85df70cb-064a-411c-8764-ed7e086cd64a",
+      "createdAt": "2026-09-04T22:54:22.562Z"
+    },
+    {
+      "type": "qr_view",
+      "accountId": "d282bba2-6f29-4a58-82b8-6a019d9d406b",
+      "visitorId": "1f7313c4-63fe-492a-923a-f4af8f4058df",
+      "id": "f2861ce3-7687-46ac-b34c-3528dd4d14d2",
+      "createdAt": "2026-09-04T22:54:23.006Z"
+    },
+    {
+      "type": "public_visit",
+      "accountId": "d282bba2-6f29-4a58-82b8-6a019d9d406b",
+      "visitorId": "1f7313c4-63fe-492a-923a-f4af8f4058df",
+      "id": "951b60de-fad3-4e38-84f2-9cb8916902fb",
+      "createdAt": "2026-09-04T22:54:27.882Z"
+    },
+    {
+      "type": "account_shown",
+      "accountId": "d282bba2-6f29-4a58-82b8-6a019d9d406b",
+      "visitorId": "1f7313c4-63fe-492a-923a-f4af8f4058df",
+      "id": "6baba23f-5e53-4ef2-af9e-8debfd8a4e03",
+      "createdAt": "2026-09-04T22:54:27.890Z"
+    },
+    {
+      "type": "qr_view",
+      "accountId": "d282bba2-6f29-4a58-82b8-6a019d9d406b",
+      "visitorId": "1f7313c4-63fe-492a-923a-f4af8f4058df",
+      "id": "a9b81bfd-c903-4089-9f95-b22b82b66a7c",
+      "createdAt": "2026-09-04T22:54:28.411Z"
+    },
+    {
+      "type": "public_visit",
+      "accountId": "d282bba2-6f29-4a58-82b8-6a019d9d406b",
+      "visitorId": "1f7313c4-63fe-492a-923a-f4af8f4058df",
+      "id": "0a816e96-66c8-4c1b-a9a4-742037ce9e3f",
+      "createdAt": "2026-09-04T22:54:31.366Z"
+    },
+    {
+      "type": "account_shown",
+      "accountId": "d282bba2-6f29-4a58-82b8-6a019d9d406b",
+      "visitorId": "1f7313c4-63fe-492a-923a-f4af8f4058df",
+      "id": "97cc366e-9bf7-410e-9f49-82392df85ba0",
+      "createdAt": "2026-09-04T22:54:31.372Z"
+    },
+    {
+      "type": "qr_view",
+      "accountId": "d282bba2-6f29-4a58-82b8-6a019d9d406b",
+      "visitorId": "1f7313c4-63fe-492a-923a-f4af8f4058df",
+      "id": "c34c0384-22ff-4cff-9d6e-26ecc3a78fc3",
+      "createdAt": "2026-09-04T22:54:31.769Z"
+    },
+    {
+      "type": "public_visit",
+      "accountId": "a4f6d9b5-7d45-4227-9004-da8617ea7051",
+      "visitorId": "1f7313c4-63fe-492a-923a-f4af8f4058df",
+      "id": "00c56e25-013c-4742-acba-3aa4abf4b99a",
+      "createdAt": "2026-09-04T22:54:34.454Z"
+    },
+    {
+      "type": "account_shown",
+      "accountId": "a4f6d9b5-7d45-4227-9004-da8617ea7051",
+      "visitorId": "1f7313c4-63fe-492a-923a-f4af8f4058df",
+      "id": "7f6f7f23-5500-4abe-b596-dfdf4f84f28a",
+      "createdAt": "2026-09-04T22:54:34.459Z"
+    },
+    {
+      "type": "qr_view",
+      "accountId": "a4f6d9b5-7d45-4227-9004-da8617ea7051",
+      "visitorId": "1f7313c4-63fe-492a-923a-f4af8f4058df",
+      "id": "25a30ca1-e661-406d-a061-ebec1725db19",
+      "createdAt": "2026-09-04T22:54:34.852Z"
+    },
+    {
+      "type": "show_another",
+      "accountId": "d282bba2-6f29-4a58-82b8-6a019d9d406b",
+      "visitorId": "1f7313c4-63fe-492a-923a-f4af8f4058df",
+      "id": "b378369e-49f8-45f7-b8fe-274ff803d57d",
+      "createdAt": "2026-09-04T22:54:39.279Z"
+    },
+    {
+      "type": "account_shown",
+      "accountId": "d282bba2-6f29-4a58-82b8-6a019d9d406b",
+      "visitorId": "1f7313c4-63fe-492a-923a-f4af8f4058df",
+      "id": "69f445cc-f153-410a-9492-acbcfb40d2eb",
+      "createdAt": "2026-09-04T22:54:39.283Z"
+    },
+    {
+      "type": "qr_view",
+      "accountId": "d282bba2-6f29-4a58-82b8-6a019d9d406b",
+      "visitorId": "1f7313c4-63fe-492a-923a-f4af8f4058df",
+      "id": "793907e6-83c8-47ad-b4c5-83b0cd62ab7a",
+      "createdAt": "2026-09-04T22:54:39.516Z"
+    },
+    {
+      "type": "show_another",
+      "accountId": "a4f6d9b5-7d45-4227-9004-da8617ea7051",
+      "visitorId": "1f7313c4-63fe-492a-923a-f4af8f4058df",
+      "id": "0ea8fba6-f184-491e-8eea-b50bb020ba6f",
+      "createdAt": "2026-09-04T22:54:41.655Z"
+    },
+    {
+      "type": "account_shown",
+      "accountId": "a4f6d9b5-7d45-4227-9004-da8617ea7051",
+      "visitorId": "1f7313c4-63fe-492a-923a-f4af8f4058df",
+      "id": "8378bc83-04fe-494e-bdbe-1ce7ffc22c4f",
+      "createdAt": "2026-09-04T22:54:41.660Z"
+    },
+    {
+      "type": "qr_view",
+      "accountId": "a4f6d9b5-7d45-4227-9004-da8617ea7051",
+      "visitorId": "1f7313c4-63fe-492a-923a-f4af8f4058df",
+      "id": "b3252ee0-93e0-4f29-9b59-f3f992f4bbe6",
+      "createdAt": "2026-09-04T22:54:41.883Z"
+    },
+    {
+      "type": "field_copied",
+      "accountId": "a4f6d9b5-7d45-4227-9004-da8617ea7051",
+      "field": "Bank Name",
+      "visitorId": "1f7313c4-63fe-492a-923a-f4af8f4058df",
+      "id": "7c7874b0-492d-4819-84a2-7c97c9bdaa18",
+      "createdAt": "2026-09-04T22:55:02.618Z"
+    },
+    {
+      "type": "public_visit",
+      "accountId": "a4f6d9b5-7d45-4227-9004-da8617ea7051",
+      "visitorId": "1f7313c4-63fe-492a-923a-f4af8f4058df",
+      "id": "6e24d66c-a994-44dd-ad91-b75c459281f0",
+      "createdAt": "2026-09-04T22:57:43.311Z"
+    },
+    {
+      "type": "account_shown",
+      "accountId": "a4f6d9b5-7d45-4227-9004-da8617ea7051",
+      "visitorId": "1f7313c4-63fe-492a-923a-f4af8f4058df",
+      "id": "11daf36c-9823-42ae-ac14-1ffc696d9ecc",
+      "createdAt": "2026-09-04T22:57:43.319Z"
+    },
+    {
+      "type": "qr_view",
+      "accountId": "a4f6d9b5-7d45-4227-9004-da8617ea7051",
+      "visitorId": "1f7313c4-63fe-492a-923a-f4af8f4058df",
+      "id": "1aba3b2f-4767-432e-b86f-03c3eb1a84e9",
+      "createdAt": "2026-09-04T22:57:43.872Z"
+    },
+    {
+      "type": "public_visit",
+      "accountId": "d282bba2-6f29-4a58-82b8-6a019d9d406b",
+      "visitorId": "1f7313c4-63fe-492a-923a-f4af8f4058df",
+      "id": "3fca6a7f-4989-49ec-9cee-9d654a929534",
+      "createdAt": "2026-09-04T22:59:49.490Z"
+    },
+    {
+      "type": "account_shown",
+      "accountId": "d282bba2-6f29-4a58-82b8-6a019d9d406b",
+      "visitorId": "1f7313c4-63fe-492a-923a-f4af8f4058df",
+      "id": "86d4c92f-506c-4d51-af72-9fc8bac98689",
+      "createdAt": "2026-09-04T22:59:49.506Z"
+    },
+    {
+      "type": "qr_view",
+      "accountId": "d282bba2-6f29-4a58-82b8-6a019d9d406b",
+      "visitorId": "1f7313c4-63fe-492a-923a-f4af8f4058df",
+      "id": "dd7b0dde-9cb3-4f26-9073-5a0375e99386",
+      "createdAt": "2026-09-04T22:59:50.076Z"
+    },
+    {
+      "type": "public_visit",
+      "accountId": "a4f6d9b5-7d45-4227-9004-da8617ea7051",
+      "visitorId": "1f7313c4-63fe-492a-923a-f4af8f4058df",
+      "id": "beb556fc-bef0-46fc-8063-a996c7fa68ce",
+      "createdAt": "2026-09-04T23:02:53.321Z"
+    },
+    {
+      "type": "account_shown",
+      "accountId": "a4f6d9b5-7d45-4227-9004-da8617ea7051",
+      "visitorId": "1f7313c4-63fe-492a-923a-f4af8f4058df",
+      "id": "ebacfddd-4dc3-4a3b-992d-38ae33550ac4",
+      "createdAt": "2026-09-04T23:02:53.325Z"
+    },
+    {
+      "type": "qr_view",
+      "accountId": "a4f6d9b5-7d45-4227-9004-da8617ea7051",
+      "visitorId": "1f7313c4-63fe-492a-923a-f4af8f4058df",
+      "id": "ee4e1340-a755-4c51-9d04-bf4406294996",
+      "createdAt": "2026-09-04T23:02:53.713Z"
+    },
+    {
+      "type": "public_visit",
+      "accountId": "d282bba2-6f29-4a58-82b8-6a019d9d406b",
+      "visitorId": "1f7313c4-63fe-492a-923a-f4af8f4058df",
+      "id": "40a10745-219b-4668-b718-59918b856795",
+      "createdAt": "2026-09-04T23:03:00.739Z"
+    },
+    {
+      "type": "account_shown",
+      "accountId": "d282bba2-6f29-4a58-82b8-6a019d9d406b",
+      "visitorId": "1f7313c4-63fe-492a-923a-f4af8f4058df",
+      "id": "bdd61350-1e8b-4010-88ca-dc52d2646e6d",
+      "createdAt": "2026-09-04T23:03:00.752Z"
+    },
+    {
+      "type": "qr_view",
+      "accountId": "d282bba2-6f29-4a58-82b8-6a019d9d406b",
+      "visitorId": "1f7313c4-63fe-492a-923a-f4af8f4058df",
+      "id": "973347b2-3680-440b-a2a5-4ee69c0d2212",
+      "createdAt": "2026-09-04T23:03:01.225Z"
+    },
+    {
+      "type": "public_visit",
+      "accountId": "d282bba2-6f29-4a58-82b8-6a019d9d406b",
+      "visitorId": "1f7313c4-63fe-492a-923a-f4af8f4058df",
+      "id": "81337047-2cb5-46f0-ac4b-de74c82251c3",
+      "createdAt": "2026-09-04T23:07:59.050Z"
+    },
+    {
+      "type": "account_shown",
+      "accountId": "d282bba2-6f29-4a58-82b8-6a019d9d406b",
+      "visitorId": "1f7313c4-63fe-492a-923a-f4af8f4058df",
+      "id": "3fbbfe2b-f3d8-4a77-b2b4-089e94f8c5d2",
+      "createdAt": "2026-09-04T23:07:59.061Z"
+    },
+    {
+      "type": "public_visit",
+      "accountId": "a4f6d9b5-7d45-4227-9004-da8617ea7051",
+      "visitorId": "1f7313c4-63fe-492a-923a-f4af8f4058df",
+      "id": "ff2f29f0-c4fb-41fb-af9a-7cbfebeea9a6",
+      "createdAt": "2026-09-04T23:07:59.137Z"
+    },
+    {
+      "type": "account_shown",
+      "accountId": "a4f6d9b5-7d45-4227-9004-da8617ea7051",
+      "visitorId": "1f7313c4-63fe-492a-923a-f4af8f4058df",
+      "id": "adfd88d0-656f-4448-83ed-e9eda1127356",
+      "createdAt": "2026-09-04T23:07:59.146Z"
+    },
+    {
+      "type": "qr_view",
+      "accountId": "a4f6d9b5-7d45-4227-9004-da8617ea7051",
+      "visitorId": "1f7313c4-63fe-492a-923a-f4af8f4058df",
+      "id": "6d3d32e4-a18e-4b1e-ba41-57ca4c727dd1",
+      "createdAt": "2026-09-04T23:07:59.446Z"
+    }
+  ]
+}
