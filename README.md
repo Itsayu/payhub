@@ -76,7 +76,7 @@ Visit `http://localhost:3000`.
 
 | Role | Login | Username / Email | Password |
 |---|---|---|---|
-| Super Admin | `/super-admin/login` | admin@payhub.com | Admin@123 |
+| Super Admin | `/super-admin/login` | ayush@admin.com | Admin@123 |
 | Acme Traders admin | `/admin` (universal) | acmaacme | Temp@123 |
 | Bright School admin | `/admin` (universal) | briabrig | Temp@123 |
 | Modern Mart admin | `/admin` (universal) | modamode | Temp@123 |

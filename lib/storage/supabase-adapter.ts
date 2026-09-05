@@ -2,27 +2,6 @@ import { createClient, SupabaseClient } from "@supabase/supabase-js";
 import { StorageAdapter } from "./adapter";
 import { Organization, SuperAdmin } from "@/lib/types";
 
-/**
- * Production storage adapter backed by Supabase (Postgres + Storage).
- *
- * SETUP — this is the ONLY thing you need to do to switch the whole app
- * from local JSON files to Supabase:
- *   1. Create a Supabase project.
- *   2. Open the SQL editor and run supabase/migration.sql from this repo.
- *      It creates the `organizations` and `super_admins` tables plus a
- *      public "uploads" storage bucket.
- *   3. In Project Settings → API, copy the Project URL, anon key, and
- *      service_role key into .env.local (see .env.example).
- *   4. Set STORAGE_MODE=supabase in .env.local.
- *   5. Run `npm run create-admin` once to create your first super admin login.
- *
- * That's it — no code changes. Every page/action/component talks to
- * getStorage(), which returns this adapter once STORAGE_MODE=supabase.
- *
- * Each organization is stored as a single `data jsonb` column (mirroring
- * the Organization type exactly), with `id` and `slug` duplicated as plain
- * columns purely so Postgres can index/query on them directly.
- */
 export class SupabaseStorageAdapter implements StorageAdapter {
   private client: SupabaseClient;
 
@@ -101,13 +80,37 @@ export class SupabaseStorageAdapter implements StorageAdapter {
   }
 
   async getSuperAdminByEmail(email: string): Promise<SuperAdmin | null> {
+    if (!email) return null;
+    const cleanEmail = email.trim().toLowerCase();
+    
     const { data, error } = await this.client
       .from("super_admins")
       .select("id, email, password_hash, created_at")
-      .ilike("email", email)
+      .ilike("email", cleanEmail)
       .maybeSingle();
+
     if (error) throw new Error(`Supabase: failed to fetch super admin — ${error.message}`);
     if (!data) return null;
+
+    return {
+      id: data.id,
+      email: data.email,
+      passwordHash: data.password_hash,
+      createdAt: data.created_at,
+    };
+  }
+
+  async getSuperAdminById(id: string): Promise<SuperAdmin | null> {
+    if (!id) return null;
+    const { data, error } = await this.client
+      .from("super_admins")
+      .select("id, email, password_hash, created_at")
+      .eq("id", id)
+      .maybeSingle();
+
+    if (error) throw new Error(`Supabase: failed to fetch super admin — ${error.message}`);
+    if (!data) return null;
+
     return {
       id: data.id,
       email: data.email,
@@ -119,12 +122,28 @@ export class SupabaseStorageAdapter implements StorageAdapter {
   async createSuperAdmin(admin: SuperAdmin): Promise<SuperAdmin> {
     const { error } = await this.client.from("super_admins").insert({
       id: admin.id,
-      email: admin.email,
+      email: admin.email.toLowerCase().trim(),
       password_hash: admin.passwordHash,
       created_at: admin.createdAt,
     });
     if (error) throw new Error(`Supabase: failed to create super admin — ${error.message}`);
     return admin;
+  }
+
+  async updateSuperAdminPassword(id: string, newPasswordHash: string): Promise<void> {
+    const { error } = await this.client
+      .from("super_admins")
+      .update({ password_hash: newPasswordHash })
+      .eq("id", id);
+    if (error) throw new Error(`Supabase: failed to update password — ${error.message}`);
+  }
+
+  async updateSuperAdminProfile(id: string, email: string): Promise<void> {
+    const { error } = await this.client
+      .from("super_admins")
+      .update({ email: email.toLowerCase().trim() })
+      .eq("id", id);
+    if (error) throw new Error(`Supabase: failed to update super admin profile — ${error.message}`);
   }
 
   async saveUploadedFile(orgSlug: string, fileName: string, buffer: Buffer): Promise<string> {

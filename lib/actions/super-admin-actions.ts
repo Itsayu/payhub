@@ -7,6 +7,7 @@ import {
   superAdminLoginSchema,
   CreateOrganizationInput,
 } from "@/lib/schemas";
+import { getStorage } from "@/lib/storage";
 import {
   createOrganization,
   suspendOrganization,
@@ -16,7 +17,7 @@ import {
   updateOrganizationDetails,
   UpdateOrganizationDetailsInput,
 } from "@/lib/services/org-service";
-import { loginSuperAdmin, logout, requireSuperAdmin } from "@/lib/services/auth-service";
+import { loginSuperAdmin, logout, requireSuperAdmin, changeSuperAdminPassword } from "@/lib/services/auth-service";
 
 export async function superAdminLoginAction(formData: FormData) {
   const parsed = superAdminLoginSchema.safeParse({
@@ -113,4 +114,35 @@ export async function resetOrgPasswordAction(slug: string) {
   const result = await resetOrgAdminPassword(slug, appUrl);
   revalidatePath("/super-admin");
   return { success: true as const, ...result };
+}
+
+export async function changeSuperAdminPasswordAction(formData: FormData) {
+  const session = await requireSuperAdmin();
+  if (!session) {
+    return { success: false as const, error: "Unauthorized session" };
+  }
+
+  const currentPassword = (formData.get("currentPassword") as string) ?? "";
+  const newPassword = (formData.get("newPassword") as string) ?? "";
+  const confirmPassword = (formData.get("confirmPassword") as string) ?? "";
+
+  if (!currentPassword || !newPassword || !confirmPassword) {
+    return { success: false as const, error: "All fields are required" };
+  }
+
+  if (newPassword !== confirmPassword) {
+    return { success: false as const, error: "New passwords do not match" };
+  }
+
+  if (newPassword.length < 8) {
+    return { success: false as const, error: "New password must be at least 8 characters long" };
+  }
+
+  try {
+    // Pass session.email if present, otherwise pass session.id
+    const identifier = session.email || session.id;
+    return await changeSuperAdminPassword(identifier, currentPassword, newPassword);
+  } catch (e) {
+    return { success: false as const, error: e instanceof Error ? e.message : "Failed to update password" };
+  }
 }

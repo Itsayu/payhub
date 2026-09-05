@@ -17,8 +17,10 @@ export interface StorageAdapter {
 
   // Super Admin
   getSuperAdminByEmail(email: string): Promise<SuperAdmin | null>;
+  getSuperAdminById(id: string): Promise<SuperAdmin | null>;
   createSuperAdmin(admin: SuperAdmin): Promise<SuperAdmin>;
-
+  updateSuperAdminPassword(id: string, newPasswordHash: string): Promise<void>;
+  
   // File storage (logos, QR codes)
   saveUploadedFile(orgSlug: string, fileName: string, buffer: Buffer): Promise<string>; // returns public URL/path
 }

@@ -43,7 +43,7 @@ export default function SuperAdminLoginPage() {
           <form action={onSubmit} className="space-y-4">
             <div className="space-y-1.5">
               <Label htmlFor="email">Email</Label>
-              <Input id="email" name="email" type="email" placeholder="admin@payhub.com" required />
+              <Input id="email" name="email" type="email" placeholder="ayush@admin.com" required />
             </div>
             <div className="space-y-1.5">
               <Label htmlFor="password">Password</Label>
@@ -54,9 +54,9 @@ export default function SuperAdminLoginPage() {
               {loading && <Loader2 className="h-4 w-4 animate-spin" />} Sign In
             </Button>
           </form>
-          <p className="mt-4 text-center text-xs text-muted-foreground">
-            Demo: admin@payhub.com / Admin@123
-          </p>
+          {/* <p className="mt-4 text-center text-xs text-muted-foreground">
+            Demo: ayush@admin.com / Admin@123
+          </p> */}
         </CardContent>
       </Card>
     </main>

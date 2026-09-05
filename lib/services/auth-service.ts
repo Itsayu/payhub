@@ -1,5 +1,5 @@
 import { getStorage } from "@/lib/storage";
-import { verifyPassword } from "./credentials";
+import { verifyPassword, hashPassword } from "./credentials";
 import { createSession, destroySession, getSession } from "./session";
 import { findOrganizationByAdminUsername } from "./org-service";
 
@@ -10,7 +10,8 @@ export async function loginSuperAdmin(email: string, password: string) {
   const valid = await verifyPassword(password, admin.passwordHash);
   if (!valid) return { success: false as const, error: "Invalid email or password" };
 
-  await createSession({ role: "super_admin", id: admin.id });
+  // Pass email into session along with id
+  await createSession({ role: "super_admin", id: admin.id, email: admin.email });
   return { success: true as const };
 }
 
@@ -76,4 +77,32 @@ export async function requireOrgAdmin(orgSlug: string) {
   const session = await getSession();
   if (!session || session.role !== "org_admin" || session.orgSlug !== orgSlug) return null;
   return session;
+}
+
+export async function changeSuperAdminPassword(
+  adminIdOrEmail: string,
+  currentPassword: string,
+  newPassword: string
+) {
+  const storage = getStorage();
+
+  // Try finding by email first, otherwise try by ID
+  let admin = await storage.getSuperAdminByEmail(adminIdOrEmail);
+  if (!admin) {
+    admin = await storage.getSuperAdminById(adminIdOrEmail);
+  }
+
+  if (!admin) {
+    return { success: false as const, error: "Super admin account not found" };
+  }
+
+  const valid = await verifyPassword(currentPassword, admin.passwordHash);
+  if (!valid) {
+    return { success: false as const, error: "Incorrect current password" };
+  }
+
+  const newHash = await hashPassword(newPassword);
+  await storage.updateSuperAdminPassword(admin.id, newHash);
+
+  return { success: true as const };
 }

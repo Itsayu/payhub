@@ -1,6 +1,6 @@
 /**
  * Seed script — creates demo data:
- *   Super Admin:  admin@payhub.com / Admin@123
+ *   Super Admin:  ayush@admin.com / Admin@123
  *   Acme Traders  (slug: acme,        org id ACME01, password: Temp@123)
  *   Bright School (slug: bright,      org id BRIT02, password: Temp@123)
  *   Modern Mart   (slug: modern-mart, org id MODR03, password: Temp@123)
@@ -51,7 +51,7 @@ loadEnvFile(".env");
 
 async function seedSuperAdmin() {
   const storage = getStorage();
-  const email = "admin@payhub.com";
+  const email = "ayush@admin.com";
   const existing = await storage.getSuperAdminByEmail(email);
   if (existing) {
     console.log(`↷ Super Admin already exists — ${email} / Admin@123 (unchanged)`);
@@ -64,7 +64,7 @@ async function seedSuperAdmin() {
     createdAt: new Date().toISOString(),
   };
   await storage.createSuperAdmin(admin);
-  console.log("✓ Super Admin created — admin@payhub.com / Admin@123");
+  console.log("✓ Super Admin created — ayush@admin.com / Admin@123");
 }
 
 interface DemoOrgSpec {
@@ -185,7 +185,7 @@ async function main() {
   await seedOrganizations();
   const demoUsername = generateAdminUsername(demoOrgs[0].orgId, demoOrgs[0].slug);
   console.log("\nDone! Start the app with `npm run dev` and try:");
-  console.log("  Super Admin login: /super-admin/login  (admin@payhub.com / Admin@123)");
+  console.log("  Super Admin login: /super-admin/login  (ayush@admin.com / Admin@123)");
   console.log(`  Org Admin login:   /admin  (username: ${demoUsername}, password: Temp@123)`);
   console.log("  ...or any of: acmaacme / briabrig / modamode  (all password: Temp@123)");
   console.log("  Public page:       /acme");
