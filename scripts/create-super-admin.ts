@@ -38,7 +38,7 @@ loadEnvFile(".env");
 
 async function main() {
   const [, , emailArg, passwordArg] = process.argv;
-  const email = emailArg ?? "admin@payhub.com";
+  const email = emailArg ?? "ayush@admin.com";
   const password = passwordArg ?? "Admin@123";
 
   if (password.length < 8) {

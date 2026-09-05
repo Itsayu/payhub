@@ -88,9 +88,25 @@ export class JsonStorageAdapter implements StorageAdapter {
     return admin;
   }
 
+  async getSuperAdminById(id: string): Promise<SuperAdmin | null> {
+    const admin = await readJson<SuperAdmin>(SUPER_ADMIN_FILE);
+    if (!admin || admin.id !== id) return null;
+    return admin;
+  }
+
   async createSuperAdmin(admin: SuperAdmin): Promise<SuperAdmin> {
     await writeJson(SUPER_ADMIN_FILE, admin);
     return admin;
+  }
+
+  async updateSuperAdminPassword(id: string, newPasswordHash: string): Promise<void> {
+    const admin = await readJson<SuperAdmin>(SUPER_ADMIN_FILE);
+    if (!admin || admin.id !== id) {
+      throw new Error(`Super admin with ID "${id}" not found`);
+    }
+
+    admin.passwordHash = newPasswordHash;
+    await writeJson(SUPER_ADMIN_FILE, admin);
   }
 
   async saveUploadedFile(orgSlug: string, fileName: string, buffer: Buffer): Promise<string> {
