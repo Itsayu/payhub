@@ -118,7 +118,7 @@ export async function resetOrgPasswordAction(slug: string) {
 
 export async function changeSuperAdminPasswordAction(formData: FormData) {
   const session = await requireSuperAdmin();
-  if (!session) {
+  if (!session || !session.id) {
     return { success: false as const, error: "Unauthorized session" };
   }
 
@@ -139,9 +139,7 @@ export async function changeSuperAdminPasswordAction(formData: FormData) {
   }
 
   try {
-    // Pass session.email if present, otherwise pass session.id
-    const identifier = session.email || session.id;
-    return await changeSuperAdminPassword(identifier, currentPassword, newPassword);
+    return await changeSuperAdminPassword(session.id, currentPassword, newPassword);
   } catch (e) {
     return { success: false as const, error: e instanceof Error ? e.message : "Failed to update password" };
   }

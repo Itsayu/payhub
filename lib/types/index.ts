@@ -109,6 +109,7 @@ export interface Organization {
 export interface SessionPayload {
   role: UserRole;
   id: string; // super admin id or org admin user id
+  email?: string;
   orgSlug?: string; // present for org_admin
   forcePasswordChange?: boolean;
 }
